@@ -1,10 +1,10 @@
-""""Sample flow"""
+"""Flow for preparing the raw dataset."""
 
 from metaflow import FlowSpec, step
 
 
 class SampleFlow(FlowSpec):
-    """Sample flow"""
+    """Sample flow class."""
 
     # pylint: disable=attribute-defined-outside-init
     # pylint: disable=import-outside-toplevel
@@ -12,15 +12,15 @@ class SampleFlow(FlowSpec):
 
     @step
     def start(self):
-        """Start the flow"""
-        self.text = "Hello, World!"
+        """Start the flow."""
+        self.text = 'Hello, World!'
         self.next(self.end)
 
     @step
     def end(self):
-        """End the flow"""
+        """End the flow."""
         print(self.text)
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     SampleFlow()

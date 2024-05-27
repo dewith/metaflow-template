@@ -1,0 +1,10 @@
+layers:
+  raw: "../data/01_raw/"
+  processed: "../data/02_processed/"
+  inputs: "../data/03_inputs/"
+  models: "../data/04_models/"
+  outputs: "../data/05_outputs/"
+
+sample:
+  layer: raw
+  path: sample.csv

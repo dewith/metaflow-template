@@ -149,6 +149,9 @@ checklink/cookies.txt
 # docs stuff
 .env/
 
-# data 
+# data
 !.gitkeep
 data/**
+
+# cache
+.ruff_cache/

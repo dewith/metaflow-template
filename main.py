@@ -1,1 +1,1 @@
-"""Main entrypoint for the app"""
+"""Main entrypoint for the app."""
