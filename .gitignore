@@ -147,5 +147,8 @@ checklink/cookies.txt
 *.metaflow*
 
 # docs stuff
-Makefile
 .env/
+
+# data 
+!.gitkeep
+data/**
