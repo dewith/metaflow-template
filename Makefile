@@ -14,4 +14,12 @@ install: env
 clean:
 	rm -rf $(VENV_DIR)
 
-.PHONY: env install clean
+# Activate virtual environment and install pre-commit
+hooks:
+	. $(VENV_DIR)/bin/activate && pre-commit install
+
+# Activate virtual environment and update pre-commit hooks
+pre-commit: hooks
+	. $(VENV_DIR)/bin/activate && pre-commit autoupdate
+
+.PHONY: env install clean hooks pre-commit
